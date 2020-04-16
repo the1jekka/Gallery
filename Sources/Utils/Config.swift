@@ -44,6 +44,7 @@ public struct Config {
 
     public struct BottomContainer {
       public static var backgroundColor: UIColor = UIColor(red: 23/255, green: 25/255, blue: 28/255, alpha: 0.8)
+        public static var tintColor = UIColor.white
     }
 
     public struct StackView {
@@ -115,4 +116,9 @@ public struct Config {
     public static var portraitSize: CGSize = CGSize(width: 360, height: 640)
     public static var landscapeSize: CGSize = CGSize(width: 640, height: 360)
   }
+    
+    public struct Global {
+        public static var backgroundColor = UIColor.white
+        public static var tintColor = UIColor.black
+    }
 }
