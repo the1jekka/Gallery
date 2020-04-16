@@ -27,7 +27,7 @@ class TripleButton: UIButton {
   func setup() {
     titleLabel?.font = Config.Font.Text.semibold.withSize(12)
     imageEdgeInsets = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0)
-    setTitleColor(UIColor.gray, for: .highlighted)
+//    setTitleColor(UIColor.gray, for: .highlighted)
 
     select(index: selectedIndex)
   }

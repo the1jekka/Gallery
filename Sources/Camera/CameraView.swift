@@ -194,6 +194,7 @@ class CameraView: UIView, UIGestureRecognizerDelegate {
         
         let button = TripleButton(states: states)
         button.tintColor = Config.Global.tintColor
+        button.setTitleColor(Config.Global.tintColor, for: .normal)
         
         return button
     }
