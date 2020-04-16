@@ -154,7 +154,7 @@ class StackView: UIControl{
 
   func makeCountLabel() -> UILabel {
     let label = UILabel()
-    label.textColor = UIColor.white
+    label.textColor = Config.Global.tintColor
     label.font = Config.Font.Main.regular.withSize(20)
     label.textAlignment = .center
     label.g_addShadow()

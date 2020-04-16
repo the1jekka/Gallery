@@ -41,7 +41,7 @@ class FrameView: UIView {
   private func makeLabel() -> UILabel {
     let label = UILabel()
     label.font = Config.Font.Main.regular.withSize(40)
-    label.textColor = UIColor.white
+    label.textColor = Config.Global.tintColor
 
     return label
   }

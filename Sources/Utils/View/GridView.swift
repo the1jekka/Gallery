@@ -87,7 +87,7 @@ class GridView: UIView {
 
   private func makeTopView() -> UIView {
     let view = UIView()
-    view.backgroundColor = UIColor.white
+    view.backgroundColor = Config.Global.backgroundColor
 
     return view
   }
@@ -127,8 +127,8 @@ class GridView: UIView {
 
   private func makeDoneButton() -> UIButton {
     let button = UIButton(type: .system)
-    button.setTitleColor(UIColor.white, for: UIControl.State())
-    button.setTitleColor(UIColor.lightGray, for: .disabled)
+    button.setTitleColor(Config.Global.tintColor, for: UIControl.State())
+//    button.setTitleColor(UIColor.lightGray, for: .disabled)
     button.titleLabel?.font = Config.Font.Text.regular.withSize(16)
     button.setTitle("Gallery.Done".g_localize(fallback: "Done"), for: UIControl.State())
     
@@ -141,7 +141,7 @@ class GridView: UIView {
     layout.minimumLineSpacing = 2
 
     let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-    view.backgroundColor = UIColor.white
+    view.backgroundColor = Config.Global.backgroundColor
 
     return view
   }
